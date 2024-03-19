@@ -11,9 +11,12 @@ This project is licensed under the [Apache-2.0 license](LICENSE).
 
 A: 通过对网页请求，获取其中的 class 标签，对比每次的内容，如果内容有差别时则提醒用户
 
-### Q: 运行配置?
+### Q: 准备环境、运行配置?
 
-A: 下载代码后，安装本地环境，凡是 TODO 的地方，及时修改即可，run起来看看吧
+A:下载代码后，安装本地环境，凡是 TODO 的地方，及时修改即可，run起来看看吧，大致流程：
+ - git clone https://github.com/learnore/WebCatch.git
+ - pip install beautifulsoup4
+ - 配置邮箱相关信息
 
 ### Q: 支持的提醒方式?
 
@@ -21,6 +24,26 @@ A:
 - [x] Email
 - [ ] 短信
 - [ ] 微信公众号
+
+### Q: 暂不支持名单整理?
+
+A: 
+- [ ] B站(要验证)
+
+
+### Q: 常用命令?
+
+A:
+```markdown
+1.  rm -rf file_name      # 删除整个文件夹且不用逐一询问
+    cd ali_shen/my_workspace/web_catch
+2.  git stash             # 将未提交的更改保存在一个临时的存储区中
+    git pull              # 拉取新代码
+    git stash pop         # 恢复暂存的更改
+4.  nohup python web_catch_main.py > web_catch_main.log 2>&1 &
+    ps aux | grep "web_catch_main.py"
+    kill -9 xxxxx
+```
 
 # 历史版本
 
