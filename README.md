@@ -9,7 +9,7 @@ This project is licensed under the [Apache-2.0 license](LICENSE).
 
 ### Q: 实现方式?
 
-A: 通过对网页请求，获取其中的 class 标签，对比每次的内容，如果内容有差别时则提醒用户
+A: 通过多协程，对多个网页进行请求，检测每个网页某一个 class 标签，对比每次的内容，如果内容有差别时则提醒用户
 
 ### Q: 准备环境、运行配置?
 
