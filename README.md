@@ -1,5 +1,5 @@
 # License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [Apache-2.0 license](LICENSE).
 
 # Web Catch
 ### Web Catch start~ Good news is coming~
