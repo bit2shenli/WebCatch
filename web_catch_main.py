@@ -16,36 +16,7 @@ from web_catch import get_website_content, check_update, test_email
 
 
 # TODO 链接和 class 配置
-link_class = [
-    # 国防科技大学
-    {
-        "name": "国防科技大学官网-通知公告",
-        "url": "http://yjszs.nudt.edu.cn/index/index.view",
-        "class": "tzgg"
-    },
-    {
-        "name": "国防科技大学官网-院所发文",
-        "url": "http://yjszs.nudt.edu.cn/index/index.view",
-        "class": "kswd zcfg fr"
-    },
-    {
-        "name": "国防科技大学官网-首页模块",
-        "url": "http://yjszs.nudt.edu.cn/index/index.view",
-        "class": "zcfg fl"
-    },
-    {
-        "name": "研招网-国防科技大学",
-        "url": "https://yz.chsi.com.cn/sch/schoolInfo--schId-368388.dhtml",
-        "class": "left"
-    },
-
-    # test
-    {
-        "name": "CSDN-头条",
-        "url": "https://www.csdn.net/",
-        "class": "headlines-right"
-    },
-]
+link_class = []
 
 
 async def main():

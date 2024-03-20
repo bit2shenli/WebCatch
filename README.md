@@ -37,7 +37,8 @@ A:
 ```markdown
 1.  rm -rf file_name      # 删除整个文件夹且不用逐一询问
     cd ali_shen/my_workspace/web_catch
-2.  git stash             # 将未提交的更改保存在一个临时的存储区中
+2.  git clone git@github.com:learnore/WebCatch.git
+    git stash             # 将未提交的更改保存在一个临时的存储区中
     git pull              # 拉取新代码
     git stash pop         # 恢复暂存的更改
 4.  nohup python web_catch_main.py > web_catch_main.log 2>&1 &
