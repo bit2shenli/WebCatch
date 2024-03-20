@@ -16,7 +16,14 @@ from web_catch import get_website_content, check_update, test_email
 
 
 # TODO 链接和 class 配置
-link_class = []
+link_class = [
+    # test
+    {
+        "name": "CSDN-头条",
+        "url": "https://www.csdn.net/",
+        "class": "headlines-right"
+    },
+]
 
 
 async def main():
