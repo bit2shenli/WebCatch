@@ -38,7 +38,10 @@ def get_website_content(url, catch_class):
 
         if content_tag:
             return content_tag.get_text()
+        elif soup.getText():
+            return soup.getText()
 
+    print(f"{url} {response.status_code}")
     return None
 
 

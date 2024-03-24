@@ -42,7 +42,7 @@ async def main():
             tasks.append(task)
 
         else:
-            print(name + " 无法获取网站内容")
+            print(f"{name} 无法获取网站内容 {url}")
 
     for task in tasks:
         await task
