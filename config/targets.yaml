@@ -72,6 +72,13 @@ targets:
     class: ""
     enabled: true
 
+  - name: "湖南省税务局"
+    url: "http://hunan.chinatax.gov.cn"
+    class: ""
+    type: "browser"     # 有 WAF 反爬保护，使用无头浏览器抓取
+    wait_ms: 8000        # 等待 JS 执行完成
+    enabled: true
+
   # ==================== 公考论坛 ====================
   - name: "QZZN公务员考试论坛"
     url: "https://bbs.qzzn.com"

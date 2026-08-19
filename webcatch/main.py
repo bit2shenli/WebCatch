@@ -12,6 +12,7 @@ from .utils import setup_logging
 from .storage import Storage
 from .monitors.html_monitor import HtmlMonitor
 from .monitors.api_monitor import ApiMonitor
+from .monitors.browser_monitor import BrowserMonitor
 from .notifiers.email_notifier import EmailNotifier
 from .notifiers.console_notifier import ConsoleNotifier
 
@@ -63,20 +64,33 @@ def build_monitors(config, targets_cfg, storage, notifiers):
         name = t.get("name", "未命名")
         url = t.get("url", "")
         css_class = t.get("class", "")
+        target_type = t.get("type", "html")
 
         if not url:
             continue
 
-        monitors.append(HtmlMonitor(
-            name=name,
-            url=url,
-            css_class=css_class,
-            storage=storage,
-            notifier=notifier,
-            interval=interval,
-            timeout=timeout,
-            max_retries=max_retries,
-        ))
+        if target_type == "browser":
+            monitors.append(BrowserMonitor(
+                name=name,
+                url=url,
+                css_selector=css_class or None,
+                storage=storage,
+                notifier=notifier,
+                interval=interval,
+                wait_ms=t.get("wait_ms", 8000),
+                max_retries=max_retries,
+            ))
+        else:
+            monitors.append(HtmlMonitor(
+                name=name,
+                url=url,
+                css_class=css_class,
+                storage=storage,
+                notifier=notifier,
+                interval=interval,
+                timeout=timeout,
+                max_retries=max_retries,
+            ))
 
     return monitors
 
