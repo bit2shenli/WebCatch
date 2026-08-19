@@ -76,7 +76,7 @@ targets:
   - name: "QZZN公务员考试论坛"
     url: "https://bbs.qzzn.com"
     class: ""
-    enabled: true
+    enabled: false
 
   # ==================== 学习资源 ====================
   - name: "学习强国"
