@@ -47,7 +47,7 @@ targets:
 
   # ==================== 长沙市 ====================
   - name: "长沙市开福区人民政府"
-    url: "https://www.kaifu.gov.cn"
+    url: "http://www.kaifu.gov.cn"  # HTTPS 证书域名不匹配，改用 HTTP
     class: ""
     enabled: true
 
@@ -62,7 +62,7 @@ targets:
     enabled: true
 
   - name: "长沙市政府门户网站"
-    url: "https://www.changsha.gov.cn"
+    url: "http://www.changsha.gov.cn"  # HTTPS 证书域名不匹配，改用 HTTP
     class: ""
     enabled: true
 
