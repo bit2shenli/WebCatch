@@ -1,0 +1,328 @@
+# WebCatch 监控目标列表
+# 每个目标包含 name（名称）、url（地址）、class（HTML class 名，可为空）
+# enabled: false 可临时关闭某个目标
+
+targets:
+  # ╔══════════════════════════════════════════════════════════════╗
+  # ║  公务员考试监控目标（2026-08-19 更新）                        ║
+  # ╚══════════════════════════════════════════════════════════════╝
+
+  # ==================== 国考相关 ====================
+  - name: "国家公务员局"
+    url: "http://bm.scs.gov.cn"
+    class: ""
+    enabled: true
+
+  - name: "国家税务总局-公务员招录"
+    url: "https://www.chinatax.gov.cn/chinatax/n896543r/zfxxgks.html?tab=gwyzp"
+    class: ""
+    enabled: true
+
+  - name: "中央机关公开遴选和公开选调"
+    url: "http://subb.scs.gov.cn"
+    class: ""
+    enabled: true
+
+  # ==================== 湖南省 ====================
+  - name: "湖南人事考试网"
+    url: "http://www.hunanpea.com"
+    class: ""
+    enabled: true
+
+  - name: "红星网-湖南省委组织部"
+    url: "http://www.hxw.gov.cn"
+    class: ""
+    enabled: true
+
+  # ==================== 四川省 ====================
+  - name: "四川人事考试网"
+    url: "https://www.scpta.com.cn"
+    class: ""
+    enabled: true
+
+  - name: "四川省人力资源和社会保障厅"
+    url: "http://rst.sc.gov.cn"
+    class: ""
+    enabled: true
+
+  # ==================== 长沙市 ====================
+  - name: "长沙市开福区人民政府"
+    url: "https://www.kaifu.gov.cn"
+    class: ""
+    enabled: true
+
+  - name: "长沙市财政局"
+    url: "http://csczj.changsha.gov.cn"
+    class: ""
+    enabled: true
+
+  - name: "长沙市人力资源和社会保障局"
+    url: "http://rsj.changsha.gov.cn"
+    class: ""
+    enabled: true
+
+  - name: "长沙市政府门户网站"
+    url: "https://www.changsha.gov.cn"
+    class: ""
+    enabled: true
+
+  # ==================== 湖南省（补充） ====================
+  - name: "湖南省人力资源和社会保障厅"
+    url: "http://rst.hunan.gov.cn"
+    class: ""
+    enabled: true
+
+  # ==================== 公考论坛 ====================
+  - name: "QZZN公务员考试论坛"
+    url: "https://bbs.qzzn.com"
+    class: ""
+    enabled: true
+
+  # ==================== 学习资源 ====================
+  - name: "学习强国"
+    url: "https://www.xuexi.cn"
+    class: ""
+    enabled: true
+
+  - name: "人民日报评论"
+    url: "http://opinion.people.com.cn"
+    class: ""
+    enabled: true
+
+  - name: "半月谈"
+    url: "http://www.banyuetan.org"
+    class: ""
+    enabled: true
+
+  # ╔══════════════════════════════════════════════════════════════╗
+  # ║  以下为旧考研监控目标（已停用）                                ║
+  # ╚══════════════════════════════════════════════════════════════╝
+
+  # ==================== 广西大学 211 ====================
+  - name: "官网-广西大学"
+    url: "https://yjsc.gxu.edu.cn/tzgg.htm"
+    class: "pull-right list-right"
+    enabled: false
+
+  - name: "官网-广西大学（机械工程学院）"
+    url: "https://me.gxu.edu.cn/index/tzgg.htm"
+    class: "winstyle208044"
+    enabled: false
+
+  - name: "研招网-广西大学"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-368436.dhtml"
+    class: "left"
+    enabled: false
+
+  # ==================== 新疆大学 211 ====================
+  - name: "新疆大学-官网"
+    url: "https://gs.xju.edu.cn/index/tzgg.htm"
+    class: "main"
+    enabled: false
+
+  - name: "官网-新疆大学-计算机科学与技术学院（网络空间安全学院）"
+    url: "https://it.xju.edu.cn/xwtz/ggtz.htm"
+    class: "left"
+    enabled: false
+
+  - name: "官网-新疆大学-智能科学与技术学院（未来技术学院）"
+    url: "https://wljs.xju.edu.cn/index/tzgg.htm"
+    class: "winstyle233985"
+    enabled: false
+
+  - name: "研招网-新疆大学"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-368613.dhtml"
+    class: "left"
+    enabled: false
+
+  # ==================== 云南大学 211 ====================
+  - name: "官网-云南大学"
+    url: "http://www.grs.ynu.edu.cn/zytz.htm"
+    class: ""
+    enabled: false
+
+  - name: "官网-云南大学-信息学院"
+    url: "http://www.ise.ynu.edu.cn/annunciations/?kw="
+    class: "row inner"
+    enabled: false
+
+  - name: "官网-云南大学-软件学院"
+    url: "http://www.sei.ynu.edu.cn/xwgg/tzgg.htm"
+    class: "class-col1"
+    enabled: false
+
+  # ==================== 河北工业大学 211 ====================
+  - name: "研招网-河北工业大学"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-367972.dhtml"
+    class: "left"
+    enabled: false
+
+  - name: "河北工业大学-官网"
+    url: "https://yjs.hebut.edu.cn/zsgz/zsgztzgg/index.htm"
+    class: "t_list_main_2"
+    enabled: false
+
+  # ==================== 合肥工业大学 211 ====================
+  - name: "合肥工业大学-官网"
+    url: "https://yjszs.hfut.edu.cn/"
+    class: "list-box fl"
+    enabled: false
+
+  - name: "研招网-合肥工业大学"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-368238.dhtml"
+    class: "left"
+    enabled: false
+
+  # ==================== 西南大学 211 重庆 ====================
+  - name: "西南大学-官网-最新动态"
+    url: "http://yz.swu.edu.cn/s/yanzhao/"
+    class: "index-2-2 col-right"
+    enabled: false
+
+  - name: "研招网-西南大学"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-368457.dhtml"
+    class: "left"
+    enabled: false
+
+  # ==================== 中国矿业大学(北京) 211 ====================
+  - name: "中国矿业大学-官网-硕士招生"
+    url: "https://yz.cumt.edu.cn/index/sszs.htm"
+    class: "ny_right"
+    enabled: false
+
+  - name: "研招网-中国矿业大学(北京)"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-367923.dhtml"
+    class: "left"
+    enabled: false
+
+  - name: "研招网-中国矿业大学(苏州)"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-368184.dhtml"
+    class: "left"
+    enabled: false
+
+  # ==================== 江南大学 211 ====================
+  - name: "江南大学-官网-最新通知"
+    url: "https://yz.jiangnan.edu.cn/zxtz2.htm"
+    class: "list_content"
+    enabled: false
+
+  - name: "研招网-江南大学"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-368189.dhtml"
+    class: "left"
+    enabled: false
+
+  # ==================== 南京农业大学 211 ====================
+  - name: "南京农业大学-官方"
+    url: "https://zsgz.njau.edu.cn/zsxx/sszs/sszxtz.htm"
+    class: "pull-right list-right"
+    enabled: false
+
+  - name: "研招网-南京农业大学"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-368198.dhtml"
+    class: "left"
+    enabled: false
+
+  # ==================== 湖南科技大学 ====================
+  - name: "研招网-湖南科技大学"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-368379.dhtml"
+    class: "left"
+    enabled: false
+
+  # ==================== 军事院校 ====================
+  - name: "研招网-信息工程大学(河南郑州)"
+    url: "https://yz.chsi.com.cn/sch/listBulletin--schId-368312,categoryId-462794,mindex-10.dhtml"
+    class: "container"
+    enabled: false
+
+  - name: "空军工程大学-官网"
+    url: "https://www.afeu.cn:1001/notice-announcement/"
+    class: "article-list"
+    enabled: false
+
+  - name: "研招网-空军工程大学"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-368547.dhtml"
+    class: "yxk-column-con"
+    enabled: false
+
+  # ==================== 研究所 ====================
+  - name: "研招网-武汉邮电科学研究院"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-368331.dhtml"
+    class: "left"
+    enabled: false
+
+  - name: "研招网-中国兵器科学研究院(西南自动化研究所)"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-368469.dhtml"
+    class: "left"
+    enabled: false
+
+  - name: "研招网-西安微电子技术研究所"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-368539.dhtml"
+    class: "left"
+    enabled: false
+
+  - name: "研招网-中国地震局地震研究所"
+    url: "https://yz.chsi.com.cn/sch/schoolInfo--schId-368329.dhtml"
+    class: "left"
+    enabled: false
+
+  - name: "中国地震局地震研究所-官网"
+    url: "https://www.ief.ac.cn/zstext/index.html"
+    class: "secondarybox"
+    enabled: false
+
+  # ==================== 51考研网 B区调剂 ====================
+  - name: "工学-新疆B区"
+    url: "https://www.51kywang.com/51kaoyanwang/vip_doc/27040148_5615798_5616751_1.html"
+    class: "MoBody"
+    enabled: false
+
+  - name: "工学-宁夏B区"
+    url: "https://www.51kywang.com/51kaoyanwang/vip_doc/27040148_5615798_5616752_1.html"
+    class: "MoBody"
+    enabled: false
+
+  - name: "工学-青海B区"
+    url: "https://www.51kywang.com/51kaoyanwang/vip_doc/27040148_5615798_5616753_1.html"
+    class: "MoBody"
+    enabled: false
+
+  - name: "工学-甘肃B区"
+    url: "https://www.51kywang.com/51kaoyanwang/vip_doc/27040148_5615798_5616754_1.html"
+    class: "MoBody"
+    enabled: false
+
+  - name: "工学-西藏B区"
+    url: "https://www.51kywang.com/51kaoyanwang/vip_doc/27040148_5615798_5616755_1.html"
+    class: "MoBody"
+    enabled: false
+
+  - name: "工学-云南B区"
+    url: "https://www.51kywang.com/51kaoyanwang/vip_doc/27040148_5615798_5616756_1.html"
+    class: "MoBody"
+    enabled: false
+
+  - name: "工学-贵州B区"
+    url: "https://www.51kywang.com/51kaoyanwang/vip_doc/27040148_5615798_5616757_1.html"
+    class: "MoBody"
+    enabled: false
+
+  - name: "工学-海南B区"
+    url: "https://www.51kywang.com/51kaoyanwang/vip_doc/27040148_5615798_5616758_1.html"
+    class: "MoBody"
+    enabled: false
+
+  - name: "工学-广西B区"
+    url: "https://www.51kywang.com/51kaoyanwang/vip_doc/27040148_5615798_5616760_1.html"
+    class: "MoBody"
+    enabled: false
+
+  - name: "工学-内蒙古B区"
+    url: "https://www.51kywang.com/51kaoyanwang/vip_doc/27040148_5615798_5616761_1.html"
+    class: "MoBody"
+    enabled: false
+
+  # ==================== 测试 ====================
+  - name: "CSDN-头条"
+    url: "https://www.csdn.net/"
+    class: "headlines-right"
+    enabled: false
